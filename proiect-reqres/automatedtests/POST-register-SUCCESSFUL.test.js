@@ -15,7 +15,7 @@ describe('POST register SUCCESSFUL', () => {
     //     "email": email,
     //     "password": password
     // }
-/// Pentru ca e dinamic nu merge?
+
     const newRegisterForm ={
         "email": "eve.holt@reqres.in",
         "password": "pistol"

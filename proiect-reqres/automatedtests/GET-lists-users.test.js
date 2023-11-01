@@ -1,7 +1,5 @@
 const {spec, request} = require ('pactum')
 
-
-
 describe('GET list users', () => {
     before(async () =>{
         request.setDefaultTimeout(10000);

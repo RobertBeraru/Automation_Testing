@@ -11,11 +11,11 @@ describe('GET Delayed Response', () => {
     const baseURL = "https://reqres.in"
 
     it('GET Delayed Response', async () =>{
-        this.timeout(10000)
+       
 
         await spec()
         .get(baseURL+"/api/users?delay=3")
-        .expectStatus(200)
+        .expectStatus(200);
 
         
     });

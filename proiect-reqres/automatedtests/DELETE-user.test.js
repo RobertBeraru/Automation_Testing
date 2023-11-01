@@ -1,7 +1,6 @@
 const {spec, request} = require ('pactum')
 const {faker} = require('@faker-js/faker')
 
-
 describe('DELETE users', () => {
     before(async () =>{
         request.setDefaultTimeout(10000);
@@ -12,7 +11,6 @@ describe('DELETE users', () => {
 
     it('DELETE list users', async () =>{
         await spec()
-
         .delete(baseURL+"/api/users/"+userID)
         .expectStatus(204)
         
