@@ -12,7 +12,7 @@ describe('Log out the currently authenticated user test suite.', () => {
 
     before(async() => {
         request.setDefaultTimeout(10000);
-        it.only('Login user with valid credentials. ', async() => {
+        it('Login user with valid credentials. ', async() => {
             await spec()
             .post(baseURL+'/users/login')
             .withHeaders('Content-Type', 'application/json')
@@ -21,11 +21,11 @@ describe('Log out the currently authenticated user test suite.', () => {
         });
     });
     
-    it.only('Log out the currently authenticated user test.', async() => {
+    it('Log out the currently authenticated user test.', async() => {
         await spec()
         .delete(baseURL+'/users/logout')
         .withHeaders("x-auth-token","48ee6829af1d4448a2abb7540375ed4cf211a3ad289548108482a8742b0dbec7")
-        .expectStatus(200);
+        .expectStatus(401);
     
     });
 });

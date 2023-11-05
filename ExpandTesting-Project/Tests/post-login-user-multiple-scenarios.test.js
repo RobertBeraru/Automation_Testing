@@ -2,8 +2,8 @@ const {request, spec} = require('pactum')
 const baseURL ='https://practice.expandtesting.com/notes/api';
 
 const reqLoginData={
-    "email": "beraru13@gmail.com",
-    "password": "testingpurpose"
+    "email": "testing@nuclene.com",
+    "password": "testtest"
     };
 
 const reqInvalidLoginData={
