@@ -2,7 +2,7 @@ const {request, spec} = require('pactum')
 const baseURL ='https://practice.expandtesting.com/notes/api';
 
 const reqEmail={
-    "email":"robert_beraru@yahoo.com"
+    "email":"testing@nuclene.com"
 };
 
 describe('Send password reset email test suite', () => {

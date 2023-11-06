@@ -14,8 +14,13 @@ const reqEmail = {
 
 describe("Sending and verifiying the provided reset token from email test suite.", () => {
   let substractedToken = "";
-  before(() => {
+  before(async() => {
     request.setDefaultTimeout(10000);
+    await spec()
+      .post(baseURL + "/users/forgot-password")
+      .withBody(reqEmail)
+      .withHeaders("Content-Type", "application/json")
+      .expectStatus(200);
   });
 
   it("Sending password reset email test.", async () => {
