@@ -1,0 +1,58 @@
+{
+    "definitions": {
+        "Welcome4": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "success": {
+                    "type": "boolean"
+                },
+                "status": {
+                    "type": "integer"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "data": {
+                    "$ref": "#/definitions/Data"
+                }
+            },
+            "required": [
+                "data",
+                "message",
+                "status",
+                "success"
+            ],
+            "title": "Welcome4"
+        },
+        "Data": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "company": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "company",
+                "email",
+                "id",
+                "name",
+                "phone"
+            ],
+            "title": "Data"
+        }
+    }
+}

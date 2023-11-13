@@ -23,7 +23,7 @@ describe("Obtain the users login token test suite", () => {
   it("Login user with valid credentials and with the assigned authentication token. ", async () => {
     await spec()
       .post(baseURL + "/users/login")
-      .withHeaders("Authorization", "Bearer" + authToken)
+      .withHeaders("x-auth-token", authToken)
       .withBody(reqLoginData)
       .expectStatus(200);
   });
