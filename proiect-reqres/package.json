@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha automatedtests --Timeout=10000",
+    "test": "npx mocha automatedtests --timeout=10000",
     "testmweb": "npx mocha automatedtests --reporter mochawesome"
   },
   "author": "",
